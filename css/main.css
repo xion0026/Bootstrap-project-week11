@@ -1,0 +1,71 @@
+/* ---------------------
+    Overwrite Styles
+----------------------- */
+:root {
+    --bs-blue: #C78C06;
+    --bs-primary: #C78C06;
+    --bs-secondary: #FFE6AC;
+    --bs-primary-rgb: 199, 140, 6;
+    --bs-secondary-rgb: 255, 230, 172;
+    --bs-dark: #222;
+    --bs-dark-rgb: 34, 34, 34;
+  }
+  
+  
+  .btn-primary,
+  .btn-primary:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .btn .bi-caret-right-fill {
+    transition: transform .5s ease;
+  }
+  
+  .btn:hover .bi-caret-right-fill {
+    transform: translateX(5px);
+  }
+  
+  .btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .btn-outline-primary:hover {
+    color: var(--bs-dark);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  .border-primary {
+    border-color: var(--bs-primary) !important;
+  }
+  
+  /* ----------------------
+        Custom Styles
+  ------------------------- */
+  /* 0 0 3 0 */
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--bs-primary);
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .show>.nav-link,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--bs-dark);
+    background-color: var(--bs-primary);
+  }
+  
+  .banner {
+    background: var(--bs-dark) url(../images/main-banner.jpg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .vision {
+    background: var(--bs-dark) url(../images/vision.jpg) no-repeat center;
+    background-size: cover;
+  }
+  
